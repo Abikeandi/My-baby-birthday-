@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Handsome! ❤️</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffeef2;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            cursor: pointer;
+        }
+        .envelope {
+            position: relative;
+            width: 320px;
+            height: 220px;
+            background-color: #f0788d;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            transition: transform 0.4s ease;
+        }
+        .envelope::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 0;
+            height: 0;
+            border-left: 160px solid transparent;
+            border-right: 160px solid transparent;
+            border-top: 110px solid #d9536f;
+            transform-origin: top;
+            transition: transform 0.4s ease 0.4s;
+            z-index: 3;
+        }
+        .card {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            width: 290px;
+            height: 200px;
+            background-color: #ffffff;
+            border-radius: 4px;
+            padding: 25px 20px;
+            box-sizing: border-box;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.6s ease 0.8s, height 0.6s ease 0.8s, top 0.6s ease 0.8s;
+            z-index: 2;
+            overflow-y: auto;
+            color: #444;
+        }
+        .card h1 {
+            font-size: 1.3rem;
+            color: #d9536f;
+            margin-top: 0;
+            text-align: center;
+            border-bottom: 1px dashed #f0788d;
+            padding-bottom: 10px;
+        }
+        .card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .instruction {
+            position: absolute;
+            bottom: -40px;
+            width: 100%;
+            text-align: center;
+            color: #d9536f;
+            font-weight: bold;
+            font-size: 0.95rem;
+            animation: pulse 1.5s infinite;
+        }
+        .container.open .envelope::before {
+            transform: rotateX(180deg);
+            z-index: 1;
+        }
+        .container.open .card {
+            transform: translateY(-160px);
+            height: 420px;
+            z-index: 4;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" onclick="this.classList.toggle('open')">
+    <div class="envelope"></div>
+    <div class="card">
+        <h1>Happiest Birthday, Handsome! 🎉❤️</h1>
+        <p>Happiest birthday to my baby, my man, my personal headache, my favourite human being, and the fine boy who has somehow managed to make himself my problem. 😭😂❤️</p>
+        <p>I'm grateful that you get to see another year, baby, and I pray this new age brings you everything your heart desires, including the things you've stopped asking for because you thought they were impossible. May God bless the work of your hands, favour you wherever you go, protect you, and give you peace of mind that money cannot buy. May your silent prayers become loud testimonies, and may your efforts finally produce results that make you smile and say, "God really did this for me."</p>
+        <p>May you experience happiness that doesn't depend on everything being perfect, success that doesn't cost you your peace, and beautiful opportunities beyond your expectations. May you grow in wisdom, experience genuine love, and always have reasons to be grateful. ❤️</p>
+        <p style="color: #d9536f; font-weight: bold;">Now, let me address the birthday boy personally. 😒😂</p>
+        <p>You're not perfect, obviously. Sometimes, you make me wonder whether you came with a manual that I accidentally threw away. 😭😂 Sometimes, I want to kiss you, hug you, and squeeze you. Other times, I want to hold your shoulders, look directly into your eyes, and ask if everything is actually okay upstairs. 💀😭 But somehow, through all the cruise, you remain someone who holds a special place in my heart.</p>
+        <p>And can we talk about how unfair it is that one person can be this annoying and still remain my favourite? 😭❤️ This arrangement needs to be investigated, and I intend to discuss it with you privately. Preferably somewhere nobody will interrupt us. 😉🤭💋</p>
+        <p>For your birthday, I wanted to give you the best gift ever: a private jet. 🚀😂 Something luxurious, unforgettable, and guaranteed to make you happy. Then I remembered you already have ME, and honestly, what can a private jet offer that I can't? 😒💀😂 I'm certain you'd choose me over a private jet every single time. So please, handle your precious gift with care. I'm a limited edition, sir. 😌❤️</p>
+        <p>But baby, beneath all my teasing, flirting, and occasional nonsense, I genuinely thank God for your life. I pray He preserves you, blesses you beyond your imagination, grants you the desires of your heart, and gives you many more years to enjoy the fruits of your labour.</p>
+        <p>I pray for us too, baby. ❤️ May we continue learning each other, understanding each other better, laughing together, creating beautiful memories, and growing into better versions of ourselves. May we always find our way back to understanding, even when things aren't perfect. I want us to keep giving each other beautiful reasons to smile. 🥹❤️</p>
+        <p><strong>And please, as you enter this new age, remember that you're somebody's boyfriend. Behave accordingly!</strong> 😂❤️ No sudden amnesia, no forgetting who's been tolerating your nonsense, and absolutely no using this new age as an excuse to become a village champion. We know your house address, sir. 😭😂</p>
+        <p style="text-align: center; font-weight: bold; color: #d9536f; border-top: 1px dashed #f0788d; padding-top: 15px;">Now come and collect your birthday kisses, birthday hugs, and whatever other birthday benefits you qualify for. Terms and conditions apply, of course. Some benefits are available only in person. 😉🤭</p>
+    </div>
+    <div class="instruction">Tap the envelope to open ✨</div>
+</div>
+
+</body>
+</html>
